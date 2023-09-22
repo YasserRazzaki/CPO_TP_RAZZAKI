@@ -20,6 +20,14 @@ public class BouteilleBiere{
  ouverte = Etreouverte; 
  System.out.println("Bouteille de " + nom +" (" + degreAlcool + " degres) \nBrasserie : " + brasserie) ;
 }
+       @Override
+public String toString() {
+String chaine_a_retourner;
+chaine_a_retourner = nom + " (" + degreAlcool + " degres) Ouverte ? ";
+if (ouverte == true ) chaine_a_retourner += "oui" ;
+else chaine_a_retourner += "non" ;
+return chaine_a_retourner ;
+}
       public void Décapsuler(){
           if (ouverte!= true) 
           {System.out.println("La chance, bierre fermee!") ;
@@ -32,6 +40,7 @@ public class BouteilleBiere{
         return ouverte;
     }
 }
+
 
 /* public String nom;
     public double degreAlcool;

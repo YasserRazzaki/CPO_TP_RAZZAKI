@@ -14,9 +14,11 @@ public class TP2_BIERES_RAZZAKI {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
         BouteilleBiere uneBiere = new BouteilleBiere("Cuvee des trolls",
 7.0 ,"Dubuisson", false) ;
         uneBiere.Décapsuler();
+        
         BouteilleBiere deuxBieres = new BouteilleBiere("Art du Java",
 22.7 ,"Noriland", true) ;
         deuxBieres.Décapsuler();
@@ -26,6 +28,7 @@ public class TP2_BIERES_RAZZAKI {
         BouteilleBiere quadBiere = new BouteilleBiere("Cool",
 23.7 ,"Prod", true) ;
         quadBiere.Décapsuler();
+        System.out.println(uneBiere) ;
         // TODO code application logic here
     }
 }
