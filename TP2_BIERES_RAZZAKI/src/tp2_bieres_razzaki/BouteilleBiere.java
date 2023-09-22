@@ -13,14 +13,24 @@ public class BouteilleBiere{
     public double degreAlcool;
     public String brasserie;
     public boolean ouverte;
-      public BouteilleBiere(String unNom, double unDegre, String uneBrasserie) {
+      public BouteilleBiere(String unNom, double unDegre, String uneBrasserie, boolean Etreouverte) {
  nom = unNom;
  degreAlcool = unDegre;
  brasserie = uneBrasserie;
- ouverte = false;
- System.out.println("Bouteille de " + nom +" (" + degreAlcool +
- " degres) \nBrasserie : " + brasserie ) ;
+ ouverte = Etreouverte; 
+ System.out.println("Bouteille de " + nom +" (" + degreAlcool + " degres) \nBrasserie : " + brasserie) ;
 }
+      public void Décapsuler(){
+          if (ouverte!= true) 
+          {System.out.println("La chance, bierre fermee!") ;
+              ouverte = true;}
+            else {
+              System.out.println("Trouve une autre bierre, celle-ci est ouverte") ;
+              ouverte = false; }
+      }
+        public boolean TestOuverte() {
+        return ouverte;
+    }
 }
 
 /* public String nom;
