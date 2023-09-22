@@ -15,11 +15,17 @@ public class TP2_BIERES_RAZZAKI {
      */
     public static void main(String[] args) {
         BouteilleBiere uneBiere = new BouteilleBiere("Cuvee des trolls",
-7.0 ,"Dubuisson") ;
+7.0 ,"Dubuisson", false) ;
+        uneBiere.Décapsuler();
         BouteilleBiere deuxBieres = new BouteilleBiere("Art du Java",
-22.7 ,"Noriland") ;
+22.7 ,"Noriland", true) ;
+        deuxBieres.Décapsuler();
         BouteilleBiere triBieres = new BouteilleBiere("Paradigme",
-8.7 ,"Artsmo") ;
+8.7 ,"Artsmo", false) ;
+        triBieres.Décapsuler();
+        BouteilleBiere quadBiere = new BouteilleBiere("Cool",
+23.7 ,"Prod", true) ;
+        quadBiere.Décapsuler();
         // TODO code application logic here
     }
 }
