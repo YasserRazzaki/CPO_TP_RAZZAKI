@@ -8,8 +8,22 @@ package tp2_bieres_razzaki;
  *
  * @author Yasser
  */
-public class BouteilleBiere {
-     public String nom;
+public class BouteilleBiere{
+    public String nom;
+    public double degreAlcool;
+    public String brasserie;
+    public boolean ouverte;
+      public BouteilleBiere(String unNom, double unDegre, String uneBrasserie) {
+ nom = unNom;
+ degreAlcool = unDegre;
+ brasserie = uneBrasserie;
+ ouverte = false;
+ System.out.println("Bouteille de " + nom +" (" + degreAlcool +
+ " degres) \nBrasserie : " + brasserie ) ;
+}
+}
+
+/* public String nom;
     public double degreAlcool;
     public String brasserie;
     public boolean ouverte;
@@ -17,5 +31,7 @@ public class BouteilleBiere {
     public void lireEtiquette() {
 System.out.println("Bouteille de " + nom +" (" + degreAlcool +
  " degres) \nBrasserie : " + brasserie ) ;
+    
 }
-}
+*/
+
